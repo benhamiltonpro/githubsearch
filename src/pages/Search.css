@@ -1,0 +1,39 @@
+.rowItem,
+.rowHeader {
+  display: flex;
+  flex: 1 0 0%;
+}
+
+.rowItem:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.rowInfo,
+.sortableHeader {
+  padding: 1rem;
+  flex: 1 0 0%;
+  overflow-wrap: break-word;
+  width: calc(100% / 6);
+}
+.rowBody .rowItem:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.055);
+}
+.rowBody .rowItem:nth-child(even):hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.rowHeader {
+  font-weight: 600;
+  border: solid 1px rgba(0, 0, 0, 0.075);
+}
+
+.sortableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sortableHeader:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
